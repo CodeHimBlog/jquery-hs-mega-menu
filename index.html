@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en-US">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initail-scale=1" />
+      <meta charset="utf-8" />
+      <title> hs Mega Menu - jQuery Plugin by Asif Mughal</title>
+      <!--Google Fonts-->
+      <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
+
+      <!--Material Design Iconic Font-->
+      <link rel="stylesheet" href="material-design/css/material-design-iconic-font.css" />
+   <!--jQuery-->
+      <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+   <!--hs Menu JS-->
+<script src="js/jquery.hsmenu.min.js"></script>
+
+<!-- hs Menu CSS-->
+<link rel="stylesheet" href="css/hs-menu.min.css" />
+
+      <script>
+         $(document).ready(function () {
+         
+         $(".hs-menubar").hsMenu(); 
+         
+         }); 
+      </script>
+
+   </head>
+   <body>
+
+      <!--Start hs Mega Menu-->
+
+      <header class="hs-menubar">
+         <div class="brand-logo"> 
+            <a href="#home_link"><img src="image/hs-menu.png" title="Your logo will be here" alt="hs Mega Menu"> </a>
+         </div>
+         <div class="menu-trigger"> <i class="zmdi zmdi-menu"></i></div>
+         <div class="search-trigger"> <i class="zmdi zmdi-search"></i></div>
+         <div class="search-box">
+            <form action="#">
+               <input type="text" name="search">
+               <button type="submit" class="search-submit" disabled>Search</button>
+            </form>
+         </div>
+         <div class="hs-user toggle" data-reveal=".user-info">
+            <img src="image/asif-mughal.jpg" alt="Asif Mughal">
+         </div>
+         <div class="grid-trigger toggle" data-reveal=".grid-items"> <i class="zmdi zmdi-view-module"></i> </div>
+         <div class="more-trigger toggle" data-reveal=".user-penal"> <i class="zmdi zmdi-more-vert"></i></div>
+      </header>
+      <section class="box-models">
+         <ul class="user-penal">
+            <li> <a href="#1"><i class="zmdi zmdi-inbox"></i> Inbox </a> </li>
+            <li> <a href="#1"> <i class="zmdi zmdi-delete"></i> Trash </a> </li>
+            <li> <a href="#1"> <i class="zmdi zmdi-star"></i> Started  </a> </li>
+            <li> <a href="#1"> <i class="zmdi zmdi-run"></i> Logout  </a> </li>
+         </ul>
+         <ul class="user-info">
+            <li class="profile-pic"> </li>
+            <li class="user-name">Asif Mughal  </li>
+            <li class="user-bio"> Front End Web Developer</li>
+            <li class="more-btn"> <a href="#1"> Find Out More</a> </li>
+         </ul>
+         <ul class="grid-items">
+            <li class="grid"> Item one</li>
+            <li class="grid"> Item two </li>
+            <li class="grid"> Item three </li>
+            <li class="grid"> Item four </li>
+            <li class="grid"> Item five </li>
+            <li class="grid"> Item six </li>
+            <li class="more-btn"><a href="#1"> More</a></li>
+         </ul>
+      </section>
+      <nav class="hs-navigation">
+         <ul class="nav-links">
+            <li><a href="#4"> <span class="icon"> <i class="zmdi zmdi-collection-item"></i> </span> List Item one</a> </li>
+            <li class="has-child">
+               <span class="its-parent">
+               <span class="icon"> <i class="zmdi zmdi-device-hub"></i> 
+               </span>Multilevel Dropdown</span>
+               <ul class="its-children">
+                  <li><a href="#1"> Sub Item 1.1 </a> </li>
+                  <li class="has-child">
+                     <span class="its-parent"> Item 1.2 has child</span>
+                     <ul class="its-children">
+                        <li> <a href="#1">Child Item 1.2.1 </a> </li>
+                        <li> <a href="#1"> Child  Item 1.2.2 </a> </li>
+                        <li> <a href="#1"> Child Item 1.2.3 </a> </li>
+                     </ul>
+                  </li>
+                  <li> <a href="#1"> Sub Item 1.3 </a> </li>
+                  <li> <a href="#1"> Sub Item 1.4 </a></li>
+               </ul>
+            </li>
+            <li> <a href="#4"> <span class="icon"> <i class="zmdi zmdi-compass"></i> </span> List three</a> </li>
+            <li> <a href="#4"> <span class="icon"> <i class="zmdi zmdi-collection-video"></i> </span> List Item four</a> </li>
+            <li class="has-child">
+               <span class="its-parent">
+               <span class="icon"> <i class="zmdi zmdi-wrap-text"></i> 
+               </span>Another Dropdown</span>
+               <ul class="its-children">
+                  <li><a href="#1"> dropdown item 1  </a> </li>
+                  <li> <a href="#1"> dropdown item 2 </a> </li>
+                  <li> <a href="#1">  dropdown item 3 </a> </li>
+                  <li> <a href="#1"> dropdown item 4</a> </li>
+               </ul>
+            </li>
+            <!--//has-child-->
+         </ul>
+      </nav>
+      <!--End hs Mega Menu-->
+
+
+      <!--Introduction and Demo Only -->
+      <header class="intro">
+         <h1> hs Mega Menu - jQuery Plugin </h1>
+         <p>
+            <strong> hs Menu</strong> is a easy to use mega menu plugin that helps you create modern navigation system with amazing features. 
+            <br />
+            <br />
+            <b> Written in:</b><i> HTML5, CSS3, JavaScript</i><br>
+            <b> Frameworks: </b> <i>  jQuery 3.3.1 &amp; Material-Design-Iconic-Font 2.0  </i>
+         </p>
+         <div class="action">
+            <a class="btn github" href="#3"> Fork on GiHub </a>
+            <a class="btn down" href="#3">Download </a>
+         </div>
+      </header>
+      <main>
+         <article>
+            <h2> Main Features </h2>
+            <ul>
+               <li>Responsive (Mobile First), Modern and Attractive Design.  </li>
+               <li>Multilevel Dropdowns based on Nested List of anchor links. </li>
+               <li>Unlimited main items and sub items can be added to a dropdown. </li>
+               <li>Animated CSS3 box models for show up Profile info, Grid Items and user penal links.</li>
+               <li> CSS3 and jQuery Sliding, Fading & Ripple Animations Enabled.  </li>
+               <li>Material Design Iconic Fonts. </li>
+               <li> Background Fading Layer.</li>
+               <li> Built in Search Form, Menubar, Dropdowns and Navigation Drawer. </li>
+               <li> Chrome, Safari, Firefox, Opera, (IE almost), IOS, Android and windows phone supported. </li>
+               <li> User Friendly and Easy to Implement. </li>
+            </ul>
+
+<h2> How to Use</h2>
+<details> <summary> Help for beginners </summary>
+<p> 1. Load the jQuery JavaScript library, Material Design Iconic Fonts, hs Menu JS and CSS file into HTML document.
+</p>
+<pre class="prettyprint lang-html">
+   &lt;!--jQuery--&gt;
+&lt;script src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"&gt;&lt;/script&gt;
+
+   &lt;!--Material Design Iconic Font--&gt;
+&lt;link rel="stylesheet" href="material-design/css/material-design-iconic-font.css" /&gt;
+
+   &lt;!--hs Menu JS--&gt;
+&lt;script src="js/jquery.hsmenu.min.js"&gt;&lt;/script&gt;
+
+   &lt;!-- hs Menu CSS--&gt;
+&lt;link rel="stylesheet" href="css/hs-menu.min.css" /&gt;
+</pre>
+
+<p> 2. Now copy the following HTML Menu structure and add your links and other necessary things into it.  </p>
+
+<pre class="prettyprint lang-html">
+     &lt;!--Start hs Mega Menu--&gt;
+
+      &lt;header class="hs-menubar"&gt;
+         &lt;div class="brand-logo"&gt; 
+            &lt;a href="#home_link"&gt;&lt;img src="image/hs-menu.png" title="Your logo will be here" alt="hs Mega Menu"&gt; &lt;/a&gt;
+         &lt;/div&gt;
+         &lt;div class="menu-trigger"&gt; &lt;i class="zmdi zmdi-menu"&gt;&lt;/i&gt;&lt;/div&gt;
+         &lt;div class="search-trigger"&gt; &lt;i class="zmdi zmdi-search"&gt;&lt;/i&gt;&lt;/div&gt;
+         &lt;div class="search-box"&gt;
+            &lt;form action="#"&gt;
+               &lt;input type="text" name="search"&gt;
+               &lt;button type="submit" class="search-submit" disabled&gt;Search&lt;/button&gt;
+            &lt;/form&gt;
+         &lt;/div&gt;
+         &lt;div class="hs-user toggle" data-reveal=".user-info"&gt;
+            &lt;img src="image/asif-mughal.jpg" alt="Asif Mughal"&gt;
+         &lt;/div&gt;
+         &lt;div class="grid-trigger toggle" data-reveal=".grid-items"&gt; &lt;i class="zmdi zmdi-view-module"&gt;&lt;/i&gt; &lt;/div&gt;
+         &lt;div class="more-trigger toggle" data-reveal=".user-penal"&gt; &lt;i class="zmdi zmdi-more-vert"&gt;&lt;/i&gt;&lt;/div&gt;
+      &lt;/header&gt;
+      &lt;section class="box-models"&gt;
+         &lt;ul class="user-penal"&gt;
+            &lt;li&gt; &lt;a href="#1"&gt;&lt;i class="zmdi zmdi-inbox"&gt;&lt;/i&gt; Inbox &lt;/a&gt; &lt;/li&gt;
+            &lt;li&gt; &lt;a href="#1"&gt; &lt;i class="zmdi zmdi-delete"&gt;&lt;/i&gt; Trash &lt;/a&gt; &lt;/li&gt;
+            &lt;li&gt; &lt;a href="#1"&gt; &lt;i class="zmdi zmdi-star"&gt;&lt;/i&gt; Started  &lt;/a&gt; &lt;/li&gt;
+            &lt;li&gt; &lt;a href="#1"&gt; &lt;i class="zmdi zmdi-run"&gt;&lt;/i&gt; Logout  &lt;/a&gt; &lt;/li&gt;
+         &lt;/ul&gt;
+         &lt;ul class="user-info"&gt;
+            &lt;li class="profile-pic"&gt; &lt;/li&gt;
+            &lt;li class="user-name"&gt;Asif Mughal  &lt;/li&gt;
+            &lt;li class="user-bio"&gt; Front End Web Developer&lt;/li&gt;
+            &lt;li class="more-btn"&gt; &lt;a href="#1"&gt; Find Out More&lt;/a&gt; &lt;/li&gt;
+         &lt;/ul&gt;
+         &lt;ul class="grid-items"&gt;
+            &lt;li class="grid"&gt; Item one&lt;/li&gt;
+            &lt;li class="grid"&gt; Item two &lt;/li&gt;
+            &lt;li class="grid"&gt; Item three &lt;/li&gt;
+            &lt;li class="grid"&gt; Item four &lt;/li&gt;
+            &lt;li class="grid"&gt; Item five &lt;/li&gt;
+            &lt;li class="grid"&gt; Item six &lt;/li&gt;
+            &lt;li class="more-btn"&gt;&lt;a href="#1"&gt; More&lt;/a&gt;&lt;/li&gt;
+         &lt;/ul&gt;
+      &lt;/section&gt;
+      &lt;nav class="hs-navigation"&gt;
+         &lt;ul class="nav-links"&gt;
+            &lt;li&gt;&lt;a href="#4"&gt; &lt;span class="icon"&gt; &lt;i class="zmdi zmdi-collection-item"&gt;&lt;/i&gt; &lt;/span&gt; List Item one&lt;/a&gt; &lt;/li&gt;
+            &lt;li class="has-child"&gt;
+               &lt;span class="its-parent"&gt;
+               &lt;span class="icon"&gt; &lt;i class="zmdi zmdi-device-hub"&gt;&lt;/i&gt; 
+               &lt;/span&gt;Multilevel Dropdown&lt;/span&gt;
+               &lt;ul class="its-children"&gt;
+                  &lt;li&gt;&lt;a href="#1"&gt; Sub Item 1.1 &lt;/a&gt; &lt;/li&gt;
+                  &lt;li class="has-child"&gt;
+                     &lt;span class="its-parent"&gt; Item 1.2 has child&lt;/span&gt;
+                     &lt;ul class="its-children"&gt;
+                        &lt;li&gt; &lt;a href="#1"&gt;Child Item 1.2.1 &lt;/a&gt; &lt;/li&gt;
+                        &lt;li&gt; &lt;a href="#1"&gt; Child  Item 1.2.2 &lt;/a&gt; &lt;/li&gt;
+                        &lt;li&gt; &lt;a href="#1"&gt; Child Item 1.2.3 &lt;/a&gt; &lt;/li&gt;
+                     &lt;/ul&gt;
+                  &lt;/li&gt;
+                  &lt;li&gt; &lt;a href="#1"&gt; Sub Item 1.3 &lt;/a&gt; &lt;/li&gt;
+                  &lt;li&gt; &lt;a href="#1"&gt; Sub Item 1.4 &lt;/a&gt;&lt;/li&gt;
+               &lt;/ul&gt;
+            &lt;/li&gt;
+            &lt;li&gt; &lt;a href="#4"&gt; &lt;span class="icon"&gt; &lt;i class="zmdi zmdi-compass"&gt;&lt;/i&gt; &lt;/span&gt; List three&lt;/a&gt; &lt;/li&gt;
+            &lt;li&gt; &lt;a href="#4"&gt; &lt;span class="icon"&gt; &lt;i class="zmdi zmdi-collection-video"&gt;&lt;/i&gt; &lt;/span&gt; List Item four&lt;/a&gt; &lt;/li&gt;
+            &lt;li class="has-child"&gt;
+               &lt;span class="its-parent"&gt;
+               &lt;span class="icon"&gt; &lt;i class="zmdi zmdi-wrap-text"&gt;&lt;/i&gt; 
+               &lt;/span&gt;Another Dropdown&lt;/span&gt;
+               &lt;ul class="its-children"&gt;
+                  &lt;li&gt;&lt;a href="#1"&gt; dropdown item 1  &lt;/a&gt; &lt;/li&gt;
+                  &lt;li&gt; &lt;a href="#1"&gt; dropdown item 2 &lt;/a&gt; &lt;/li&gt;
+                  &lt;li&gt; &lt;a href="#1"&gt;  dropdown item 3 &lt;/a&gt; &lt;/li&gt;
+                  &lt;li&gt; &lt;a href="#1"&gt; dropdown item 4&lt;/a&gt; &lt;/li&gt;
+               &lt;/ul&gt;
+            &lt;/li&gt;
+            &lt;!--//has-child--&gt;
+         &lt;/ul&gt;
+      &lt;/nav&gt;
+      &lt;!--End hs Mega Menu--&gt;
+</pre>
+
+</details>
+
+<p> Initialize <code>hsMenu()</code> with <code> hs-menubar </code> selector in jQuery document ready function. </p>
+
+<pre class="prettyprint lang-js">
+$(document).ready(function () {
+         
+ $(".hs-menubar").hsMenu(); 
+         
+}); 
+</pre>
+
+<h2> Working with Dropdowns</h2>
+
+<p>
+You can add multilevel dropdowns as many as you need with the same method and class name scheme.  
+</p>
+<p> To create first level dropdown (in main list of items) create a <code> li </code> element with <code> has-child</code> class name. After this, create a <code> span </code> element with class name <code> its-parent</code> that contains child items. Now, create another unordered list within li (<code> ul </code>) with class name <code> its-children </code>.
+An example below: </p>
+
+<pre class="prettyprint lang-html">
+&lt;li class="has-child"&gt;
+   &lt;span class="its-parent"&gt; Dropdown&lt;/span&gt;
+               &lt;ul class="its-children"&gt;
+                  &lt;li&gt;&lt;a href="#1"&gt; dropdown item 1  &lt;/a&gt; &lt;/li&gt;
+                  &lt;li&gt; &lt;a href="#1"&gt; dropdown item 2 &lt;/a&gt; &lt;/li&gt;
+               &lt;/ul&gt;
+&lt;/li&gt;
+</pre>
+
+<p>
+You can nested dropdowns by the above mentioned method and class names. Such as:
+</p>
+
+<pre class="prettyprint lang-html">
+&lt;li class="has-child"&gt;
+               &lt;span class="its-parent"&gt;
+                Multilevel Dropdown&lt;/span&gt;
+               &lt;ul class="its-children"&gt;
+                  &lt;li&gt;&lt;a href="#1"&gt; Sub Item 1.1 &lt;/a&gt; &lt;/li&gt;
+                  &lt;li class="has-child"&gt;
+                     &lt;span class="its-parent"&gt; Item 1.2 has child&lt;/span&gt;
+                     &lt;ul class="its-children"&gt;
+                        &lt;li&gt; &lt;a href="#1"&gt;Child Item 1.2.1 &lt;/a&gt; &lt;/li&gt;
+                        &lt;li&gt; &lt;a href="#1"&gt; Child  Item 1.2.2 &lt;/a&gt; &lt;/li&gt;
+                        &lt;li&gt; &lt;a href="#1"&gt; Child Item 1.2.3 &lt;/a&gt; &lt;/li&gt;
+                     &lt;/ul&gt;
+                  &lt;/li&gt;
+                  &lt;li&gt; &lt;a href="#1"&gt; Sub Item 1.3 &lt;/a&gt; &lt;/li&gt;
+                  &lt;li&gt; &lt;a href="#1"&gt; Sub Item 1.4 &lt;/a&gt;&lt;/li&gt;
+               &lt;/ul&gt;
+            &lt;/li&gt;
+</pre>
+
+
+
+<h2> hs Mega Menu Options </h2>
+
+<p>
+There are four options available to customize this navigation system. These are:
+</p>
+
+<pre class="prettyprint lang-js">
+bgFading: true, //(false to disable) background dim overlay when side navigation drawer open 
+outClickToClose: true, // (false to disable) close opened items if user click outside of them 
+navControls: true, // (false to disable) provide buttons to allow visitors to increase some width and height of drawer
+fixedMenubar: true, //false to static
+</pre>
+
+
+         </article>
+      </main>
+      <!--DEMO ONLY FILES-->
+      <link rel="stylesheet" href="docs/demo-only.css" />
+      <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"> </script> 
+      <footer class="credit">
+         Coded with <span title="Coffee"></span> by Asif Mughal &copy; 2018 - <a href="https://www.codehim.com" rel="dofollow" title="Awesome Web Projects and Tutorials" target="_blank"> Codehim.com </a>
+      </footer>
+   </body>
+</html>
