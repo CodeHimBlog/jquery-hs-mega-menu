@@ -1,7 +1,7 @@
 # jquery-hs-mega-menu
 hs Menu is a easy to use mega menu plugin that helps you create modern navigation system with amazing features. 
 
-Browse: [Live Demo & Using Guide](https://codehimblog.github.io/jquery-hs-mega-menu) 
+Browse: [Live Demo & Using Guide](https://jqueryprojects.com/jquery-hs-mega-menu/) 
 
 ## Main Features
 * Responsive (Mobile First), Modern and Attractive Design.
